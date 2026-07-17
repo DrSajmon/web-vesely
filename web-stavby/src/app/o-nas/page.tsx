@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const metadata = { title: "O nás | Stavby Novák" };
+export const metadata = { 
+  title: "O nás | Stavby Novák" 
+};
 
 export default function ONasPage() {
   return (

@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const metadata = { title: "Kontakt | Stavby Novák" };
+export const metadata = { 
+  title: "Kontakt | Stavby Novák" 
+};
 
 export default function KontaktPage() {
   return (

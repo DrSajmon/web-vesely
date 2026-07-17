@@ -1,6 +1,8 @@
 import React from 'react';
 
-export const metadata = { title: "Služby | Stavby Novák" };
+export const metadata = { 
+  title: "Služby | Stavby Novák" 
+};
 
 export default function SluzbyPage() {
   return (
