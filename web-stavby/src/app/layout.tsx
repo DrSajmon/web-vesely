@@ -1,17 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 export const metadata = {
   title: "Stavby Novák | Realizace a rekonstrukce staveb",
   description: "Kompletní stavební činnost, rodinné domy na klíč, rekonstrukce a hrubé stavby s důrazem na kvalitu.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="cs">
       <body style={{ margin: 0, padding: 0, fontFamily: 'system-ui, -apple-system, sans-serif', backgroundColor: '#f1f5f9', color: '#334155', display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         
-        {/* STAVEBNÍ ANTRACITOVO-ORANŽOVÁ HLAVIČKA */}
         <header style={{ backgroundColor: '#1e293b', color: '#fff', position: 'sticky', top: 0, zIndex: 1000, borderBottom: '4px solid #f97316', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Link href="/" style={{ fontSize: '1.5rem', fontWeight: '800', color: '#fff', textDecoration: 'none', letterSpacing: '-0.5px', textTransform: 'uppercase' }}>
@@ -27,12 +27,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
 
-        {/* VNITŘEK STRÁNEK */}
         <div style={{ flex: 1 }}>
           {children}
         </div>
 
-        {/* PATIČKA */}
         <footer style={{ backgroundColor: '#0f172a', color: '#94a3b8', padding: '40px 20px', marginTop: '60px', borderTop: '1px solid #334155', fontSize: '0.875rem' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '30px' }}>
